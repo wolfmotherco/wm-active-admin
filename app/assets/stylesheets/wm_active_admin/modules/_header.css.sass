@@ -1,0 +1,27 @@
+.header
+  color: $color-white
+  background: $color-black
+  height: 90px
+  @extend .typography-medium
+  @include flexbox
+  @include align-items(center)
+  margin-bottom: 62px
+  @extend .default-side-padding
+
+.header .site_title
+  color: $color-grey-dark
+  display: inline-block
+  margin-right: 46px
+
+.header-item
+  display: inline-block
+
+.header-item li
+  display: inline-block
+  margin-right: 40px
+
+.header-item .current
+  color: $color-orange
+
+.header #utility_nav
+  margin-left: auto

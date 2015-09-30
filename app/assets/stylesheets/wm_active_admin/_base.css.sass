@@ -1,0 +1,41 @@
+html
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+  color: $color-black
+  @extend .typography-base
+
+a
+  text-decoration: none
+  color: inherit
+
+h2
+  @extend .typography-header
+
+.breadcrumb
+  display: none
+
+#active_admin_content
+  margin-bottom: 142px
+  min-height: calc(100vh - 580px)
+  @extend .default-side-padding
+  @include flexbox
+
+#main_content_wrapper
+  width: 100%
+
+.flash
+  @extend .default-side-padding
+  width: 100%
+  background: $color-orange
+  padding-top: 10px
+  padding-bottom: 10px
+  position: absolute
+  top: 90px
+  color: $color-white
+
+.logged_out .flash
+  top: 0

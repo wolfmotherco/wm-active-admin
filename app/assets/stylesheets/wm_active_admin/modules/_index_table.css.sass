@@ -1,0 +1,36 @@
+.index_content
+  margin-bottom: 42px
+  margin-right: 32px
+
+.index_as_table
+  .index_table
+    width: 100%
+
+  th
+    @extend .typography-action
+
+  thead tr
+    border-top: none
+
+  tr
+    border-top: $color-grey-medium 1px solid
+
+  tr:last-of-type
+    border-bottom: $color-grey-medium 1px solid
+
+  .col
+    padding: 17px 32px 15px 0
+
+  .col:last-of-type
+    padding-right: 0px
+
+  .table_actions a
+    padding-right: 16px
+    color: $color-orange
+
+  .table_actions a:last-of-type
+    padding-right: 0
+
+#index_footer
+  color: $color-grey-medium
+  @extend .typography-small

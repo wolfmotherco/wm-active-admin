@@ -1,0 +1,64 @@
+form:not(.filter_form):not(#session_new)
+  $label-width: 236px
+
+  .label
+    width: $label-width
+    display: inline-block
+    vertical-align: top
+
+  .inputs
+    legend
+      font-size: 16px
+      margin-bottom: 22px
+      display: block
+
+    .input
+      margin-bottom: 22px
+      min-height: 30px
+
+    .input.boolean
+      padding-left: $label-width
+
+    .inline-hints
+      padding-left: $label-width
+      padding-top: 2px
+      margin-bottom: -2px
+      color: $color-grey-medium
+      font-style: italic
+      font-size: 10px
+
+    input[type='text'], input[type='email'], input[type='number'], input[type='password'], textarea, .redactor-box
+      -webkit-appearance: textfield
+      font-size: 12px
+      font-family: 'Neuzeit'
+      width: calc(100% - 236px)
+      border: none
+      border-bottom: 1px solid $color-grey-medium
+      padding: 10px 0 6px 0
+      outline: none
+      display: inline-block
+      @include input-placeholder
+        font-family: 'Neuzeit'
+        color: $color-black
+
+    textarea
+      padding: 10px 6px 6px 6px
+
+    .redactor-box
+      padding: 0
+
+    textarea
+      border: 1px solid $color-grey-medium
+
+  .actions
+    padding-left: $label-width
+    li
+      display: inline-block
+
+    input[type='submit']
+      @extend .button-small
+      margin-right: 10px
+
+    .cancel a
+      @extend .button-small
+      background-color: $color-grey-medium

@@ -1,0 +1,82 @@
+.logged_out
+  padding-top: 58px
+
+  #active_admin_content
+    min-height: calc(100vh - 380px)
+
+  #login
+    margin: 0 auto
+
+  h2, h3
+    font-size: 30px
+    color: $color-grey-medium
+    font-weight: 400
+    text-align: center
+    @extend .font-smoothing
+
+  h2
+    color: $color-black
+    margin-bottom: 130px
+
+  #session_new
+    width: 450px
+
+  input[type='email']
+    margin-bottom: 36px
+
+  input[type='email'], input[type='password']
+    -webkit-appearance: textfield
+    font-size: 16px
+    font-family: 'Neuzeit'
+    width: 100%
+    border: none
+    border-bottom: 1px solid $color-black
+    padding: 10px 0 6px 0
+    outline: none
+    @include input-placeholder
+      font-family: 'Neuzeit'
+      color: $color-black
+
+  .email.input label, .password.input label
+    display: none
+
+  input[type='password']
+    margin-bottom: 50px
+
+  #admin_user_submit_action
+    float: right
+    margin-bottom: 20px
+
+  input[type='submit']
+    @extend .button
+    width: 144px
+
+  #admin_user_remember_me
+    margin-right: 12px
+
+  #admin_user_remember_me_input
+    font-size: 14px
+    float: left
+
+  .forgot_password
+    width: 144px
+    color: $color-grey-medium
+    clear: right
+    float: right
+    text-decoration: underline
+    text-align: center
+
+  #footer
+    height: 380px
+    background: $color-black
+    @include flexbox
+    @include align-items(center)
+    @include justify-content(center)
+
+  #footer:before
+    background: url(asset-path('active_admin/wm-logo-grey.svg')) no-repeat
+    content: ""
+    width: 146px
+    height: 78px
+    display: inline-block
+

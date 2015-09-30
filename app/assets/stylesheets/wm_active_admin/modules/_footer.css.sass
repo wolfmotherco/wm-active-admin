@@ -1,0 +1,27 @@
+.footer
+  @extend .default-side-padding
+  background: $color-grey-light
+  height: 200px
+  @include flexbox
+  @include align-items(center)
+
+.footer p:before
+  background: url(asset-path('active_admin/wm-logo-grey.svg'))
+  content: ""
+  width: 111px
+  height: 59px
+  display: inline-block
+  visibility: visible
+  float: left
+
+.footer p
+  width: 100%
+  visibility: hidden
+
+.footer p:after
+  content: "With cubs, hugs and Active Admin from wolfmother.co"
+  visibility: visible
+  line-height: 59px
+  float: right
+  letter-spacing: 0.05em
+  color: $color-grey-medium
