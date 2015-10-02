@@ -1,5 +1,24 @@
 form:not(.filter_form):not(#session_new)
-  $label-width: 236px
+  $label-width: 200px
+
+  .errors
+    margin-bottom: 40px
+    color: $color-orange
+    list-style: disc
+    font-size: 14px
+    padding-left: 16px
+    li
+      margin-bottom: 8px
+
+  .input.error
+    label
+      color: $color-orange
+
+    input
+      border: 1px solid $color-orange!important
+
+  .inline-errors
+    display: none
 
   .label
     width: $label-width
@@ -7,13 +26,18 @@ form:not(.filter_form):not(#session_new)
     vertical-align: top
 
   .inputs
+    ol
+      background: $color-grey-light
+      padding: 20px
+      margin-bottom: 50px
+
     legend
       font-size: 16px
       margin-bottom: 22px
       display: block
 
     .input
-      margin-bottom: 22px
+      margin-bottom: 16px
       min-height: 30px
 
     .input.boolean
@@ -23,9 +47,15 @@ form:not(.filter_form):not(#session_new)
       padding-left: $label-width
       padding-top: 2px
       margin-bottom: -2px
-      color: $color-grey-medium
+      color: $color-grey-dark
       font-style: italic
       font-size: 10px
+
+    .label
+      padding: 12px 0
+
+    select
+      margin-top: 12px
 
     input[type='text'], input[type='email'], input[type='number'], input[type='password'], textarea, .redactor-box
       -webkit-appearance: textfield
@@ -33,25 +63,37 @@ form:not(.filter_form):not(#session_new)
       font-family: 'Neuzeit'
       width: calc(100% - 236px)
       border: none
-      border-bottom: 1px solid $color-grey-medium
-      padding: 10px 0 6px 0
+      padding: 12px 14px
       outline: none
       display: inline-block
       @include input-placeholder
         font-family: 'Neuzeit'
         color: $color-black
 
-    textarea
-      padding: 10px 6px 6px 6px
+    input[type='file']
+      margin-top: 10px
 
     .redactor-box
       padding: 0
 
-    textarea
-      border: 1px solid $color-grey-medium
+    .redactor-editor, .redactor-editor p, .redactor-editor h3
+      font-size: 12px
+      line-height: 18px
+      font-family: 'Neuzeit'
+
+    .redactor-editor h3
+      font-size: 16px
+
+    textarea, .redactor-box
+      max-width: 680px
+      line-height: 18px
+      letter-spacing: 0.02em
+      min-height: 180px
+      max-height: 180px
 
   .actions
-    padding-left: $label-width
+    padding-left: $label-width+20px
+
     li
       display: inline-block
 

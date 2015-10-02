@@ -1,13 +1,13 @@
 #sidebar
   margin-left: auto
-  margin-top: 67px
+  padding-top: 15px
 
 .sidebar_section
   min-width: 272px
 
   h3
     @extend .typography-action
-    padding: 17px 0px 16px 0
+    margin-bottom: 13px
 
   .panel_contents
     border-top: 1px solid $color-grey-medium
@@ -17,6 +17,15 @@
   label
     display: block
     margin-bottom: 17px
+
+  .filter_string
+    select
+      margin-bottom: 12px
+
+    input
+      display: block
+      padding: 8px 6px
+      width: 100%
 
   input[type='text']
     border: 1px solid $color-grey-medium
