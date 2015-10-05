@@ -32,7 +32,7 @@
     width: 100%
     border: none
     border-bottom: 1px solid $color-black
-    padding: 10px 0 14px 0
+    padding: 14px 0
     outline: none
     @include input-placeholder
       font-family: 'Neuzeit'
@@ -73,6 +73,8 @@
     @include flexbox
     @include align-items(center)
     @include justify-content(center)
+    &:hover
+      cursor: pointer
 
   #footer:before
     background: url(asset-path('active_admin/wm-logo-grey.svg')) no-repeat
