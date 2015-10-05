@@ -7,6 +7,12 @@
   display: inline-block
   @extend .typography-action-heavy
   background-color: transparent
+  @include wm-transition(color)
+  @include wm-transition(background)
+  &:hover
+    background-color: $color-orange
+    color: $color-white
+    cursor: pointer
 
 .button-small
   font-family: 'Neuzeit'
