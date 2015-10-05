@@ -24,6 +24,10 @@
   border: none
   color: $color-white
   padding: 0 16px
+  @include wm-transition(background)
+  &:hover
+    cursor: pointer
 
 .button-grey
   background: $color-grey-medium
+  @include wm-transition(background)

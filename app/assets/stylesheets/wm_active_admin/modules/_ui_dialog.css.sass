@@ -1,0 +1,32 @@
+.ui-dialog
+  width: 100vw!important
+  height: 100vh!important
+  top: 0!important
+  left: 0!important
+  background: rgba(37,37,37,0.5)
+  position: fixed
+
+.ui-dialog-titlebar
+  width: 384px
+  height: 176px
+  background-color: white
+  top: 50%
+  left: 50%
+  position: absolute
+  @include translate(-50%, -50%)
+  padding: 46px 41px
+  button
+    display: none
+
+.ui-dialog-buttonpane
+  background-color: white
+  top: 50%
+  left: 50%
+  position: absolute
+  @include translate(-50%, -50%)
+  margin: 40px 0 0 -80px
+  button
+    @extend .button-small
+  button:last-child
+    @extend .button-grey
+    margin-left: 10px
