@@ -25,13 +25,36 @@ form:not(.filter_form):not(#session_new)
     display: inline-block
     vertical-align: top
 
+  .inline-hints, .choices-group, .fragments-group
+    padding-left: $label-width
+    padding-top: 2px
+    margin-bottom: -2px
+    color: $color-grey-dark
+    font-style: italic
+    font-size: 10px
+
+  .fragments, .choices
+    .fragments-group
+      padding-left: 0
+    .fragments-group, .label
+      float: left
+
+  .choices-group
+    padding-top: 8px
+
+  .fragment, .choice
+    display: inline-block
+    margin-right: 14px
+    label
+      margin-right: 6px
+
   .inputs
-    ol
+    ol:not(.choices-group):not(.fragments-group)
       background: $color-grey-light
       padding: 20px
       margin-bottom: 50px
 
-    legend
+    legend:not(.label)
       font-size: 16px
       margin-bottom: 22px
       display: block
@@ -45,14 +68,6 @@ form:not(.filter_form):not(#session_new)
 
     .input.boolean
       padding-left: $label-width
-
-    .inline-hints
-      padding-left: $label-width
-      padding-top: 2px
-      margin-bottom: -2px
-      color: $color-grey-dark
-      font-style: italic
-      font-size: 10px
 
     .label
       padding: 12px 0
