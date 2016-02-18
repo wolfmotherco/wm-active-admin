@@ -11,23 +11,26 @@
     min-width: 20px
     padding: 0!important
 
+  .activeadmin-sortable
+    padding: 0 4px 0 14px!important
+
   .handle
     padding-right: 20px
 
   th
     @extend .typography-action
+    color: $color-orange
+    text-transform: uppercase
+    font-weight: 700
 
   thead tr
     border-top: none
 
-  tr
-    border-top: $color-grey-medium 1px solid
-
-  tr:last-of-type
-    border-bottom: $color-grey-medium 1px solid
+  .odd
+    background-color: $color-grey-light
 
   .col
-    padding: 17px 18px 15px 0
+    padding: 13px 18px 11px 0
 
   .col:last-of-type
     padding-right: 0px

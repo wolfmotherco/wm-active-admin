@@ -1,22 +1,21 @@
 #sidebar
   margin-left: auto
-  padding-top: 95px
+  margin-top: 71px
 
 .sidebar_section
   min-width: 272px
 
   h3
     @extend .typography-action
-    margin-bottom: 13px
+    text-transform: uppercase
+    margin-bottom: 0
 
   .panel_contents
-    border-top: 1px solid $color-grey-medium
-    border-bottom: 1px solid $color-grey-medium
-    padding: 24px 0
+    padding: 16px 0
 
   label
     display: block
-    margin-bottom: 17px
+    margin-bottom: 8px
 
   .filter_string
     select
@@ -37,7 +36,7 @@
     padding: 0 8px
 
   .filter_form_field
-    margin-bottom: 26px
+    margin-bottom: 20px
 
   .filter_form .buttons
     input
@@ -45,5 +44,5 @@
     input, a
       @extend .button-small
     a
-      background: $color-grey-medium
-
+      background: $color-grey-light
+      color: $color-grey-dark
